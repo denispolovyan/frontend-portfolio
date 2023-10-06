@@ -1,19 +1,26 @@
 <script setup>
 const imgClasses = 'h-14 w-14 sm:h-10 sm:w-10'
+
+import { usePortfolioStore } from '../store/portfolio'
+
+const store = usePortfolioStore()
+
 </script>
 
 <template>
-  <div>
+  <div class="font border-b" :class="{ 'bg-slate-100': store.getNightTheme, 'bg-slate-50': !store.getNightTheme }">
     <div class="content-container_frontpage relative lg:flex lg:flex-col lg:gap-8">
       <div class="lg:flex sm:flex-col sm:gap-2">
         <div>
           <div class="underline mb-8 text-stone-400 md:mb-6 sm:mb-4">Hello world !</div>
-          <div class="text-5xl w-2/3 mb-12 z-20 lg:w-10/12 lg:mb-2 md:text-3xl md:w-3/4 sm:w-11/12 sm:mb-4">
-            I am a junior frontend developer. This is a site about me and my experience
+          <div
+            class="text-5xl w-2/3 mb-12 z-20 lg:w-10/12 lg:mb-2 md:text-3xl md:w-3/4 sm:w-11/12 sm:mb-4"
+          >
+            I am a junior frontend developer. This is a site about me and my experience.
           </div>
         </div>
         <div
-          class="flex gap-8 justify-start z-100 lg:absolute lg:flex-col lg:right-4 lg:gap-12 lg:top-20 md:gap-7 sm:static sm:flex-row sm:gap-6 xs:gap-4 sm:mb-2"
+          class="flex gap-8 justify-start lg:absolute lg:flex-col lg:right-4 lg:gap-12 lg:top-20 md:gap-7 sm:static sm:flex-row sm:gap-6 xs:gap-4 sm:mb-2"
         >
           <div>
             <a href="https://github.com/denispolovyan">
@@ -49,7 +56,7 @@ const imgClasses = 'h-14 w-14 sm:h-10 sm:w-10'
           </div>
         </div>
       </div>
-      <div class="absolute top-16 right-0 z-1 text-center lg:static lg:pl-4">
+      <div class="absolute top-16 right-0 z-1 text-center lg:static lg:pl-4 lg:w-3/4">
         <div class="relative">
           <img class="h-64 xs:h-48" src="../assets/img/me.png" alt="my photo" />
           <img class="spin-text absolute" src="../assets/img/rotate/text.png" alt="rotate text" />
@@ -105,14 +112,14 @@ const imgClasses = 'h-14 w-14 sm:h-10 sm:w-10'
 
 @media (max-width: 450px) {
   .spin-text {
-	width:110px;
-	height: 110px;
+    width: 110px;
+    height: 110px;
     top: 96px;
     left: 96px;
   }
   .spin-text-1 {
-	width:110px;
-	height: 110px;
+    width: 110px;
+    height: 110px;
     top: -14px;
     left: -14px;
   }

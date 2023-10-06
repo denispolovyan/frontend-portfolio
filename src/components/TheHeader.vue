@@ -9,11 +9,12 @@ const store = usePortfolioStore()
 
 let nightTheme = ref(false)
 
-const itemClasses = 'whitespace-nowrap h-12 px-2 flex items-center rounded-sm duration-1000 cursor-pointer'
+const itemClasses =
+  'whitespace-nowrap h-12 px-2 flex items-center rounded-sm duration-1000 cursor-pointer ssm:text-xs xs:px-1'
 
 function changeTheme() {
   store.changeTheme()
-  nightTheme.value = !nightTheme.value
+  nightTheme.value = store.getNightTheme
   localStorage.setItem('nightTheme', JSON.stringify(nightTheme.value))
 }
 
@@ -30,25 +31,25 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-blue-200 font">
-    <div class="flex gap-5 h-40 items-center justify-between content-container">
-      <div><img class="w-20" src="../assets/logo.png" alt="logo" /></div>
-      <div class="flex items-center gap-4">
-        <div :class="itemClasses" class="bg-blue-700 hover:bg-blue-400 text-white">projects</div>
-        <div :class="itemClasses" class="bg-cyan-600 hover:bg-cyan-500 text-white">about me</div>
+  <div class="font border-b" :class="{ 'bg-gray-400': nightTheme, 'bg-slate-100': !nightTheme }">
+    <div class="flex gap-3 h-40 items-center justify-between content-container">
+      <div><img v-if="!nightTheme" class="w-20 ssm:w-16" src="../assets/logo.png" alt="logo" /><img v-else class="w-20 ssm:w-16" src="../assets/logoWhite.png" alt="logo" /></div>
+      <div class="flex items-center gap-3 ssm:gap-2 xs:gap-2">
+        <div :class="itemClasses" class="bg-gray-700 hover:bg-gray-400 text-white">projects</div>
+        <div :class="itemClasses" class="bg-stone-700 hover:bg-stone-400 text-white">about me</div>
         <div class="flex gap-5 bold">
           <div
             @click="changeTheme()"
-            class="w-32 justify-center gap-2 h-12 px-2 flex items-center rounded-sm duration-1000 cursor-pointer"
+            class="w-32 justify-center gap-2 h-12 px-2 flex items-center rounded-sm duration-1000 cursor-pointer ssm:text-xs ssm:gap-1 ssm:w-24 xs:w-20"
             :class="{
               itemClasses,
               'bg-teal-900 text-white hover:bg-teal-700': nightTheme,
               'bg-orange-500  text-stone-100 hover:bg-orange-300': !nightTheme
             }"
           >
-            <div class="w-8">
-              <SunIcon v-if="!nightTheme" class="h-8 w-8" />
-              <MoonIcon v-else class="h-8 w-8" />
+            <div>
+              <SunIcon v-if="!nightTheme" class="h-8 ssm:h-5 ssm:w-5" />
+              <MoonIcon v-else class="h-8 ssm:h-5 ssm:w-5" />
             </div>
             <p class="">{{ nightTheme ? 'night' : 'day' }}</p>
           </div>
