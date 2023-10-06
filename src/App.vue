@@ -1,12 +1,12 @@
 <script setup>
 import TheHeader from './components/TheHeader.vue'
-import TheNavigation from './components/TheNavigation.vue'
+import TheFrontPage from './components/TheFrontPage.vue'
 </script>
 
 <template>
   <div class="wrapper">
     <the-header />
-    <the-navigation />
+    <the-front-page />
   </div>
 </template>
 

@@ -9,7 +9,7 @@ const store = usePortfolioStore()
 
 let nightTheme = ref(false)
 
-const itemClasses = 'h-12 px-2 flex items-center rounded-sm duration-1000 cursor-pointer'
+const itemClasses = 'whitespace-nowrap h-12 px-2 flex items-center rounded-sm duration-1000 cursor-pointer'
 
 function changeTheme() {
   store.changeTheme()
@@ -22,7 +22,7 @@ onMounted(() => {
   if (JSON.parse(nightThemeLS)) {
     let parsedNightThemeLS = JSON.parse(nightThemeLS)
     nightTheme.value = parsedNightThemeLS
-    if (parsedNightThemeLS != store.nightTheme) {
+    if (parsedNightThemeLS != store.getNightTheme) {
       store.changeTheme()
     }
   }
