@@ -29,10 +29,15 @@ let exactProjects = ref({
   relvise: false,
   agency: false
 })
+
 const projectCardClasse = 'text-2xl flex gap-4 items-center'
 const projectArrowClasses =
   'bg-stone-100 p-2 rounded-sm w-9 h-9 cursor-pointer hover:bg-stone-700 duration-1000 hover:text-white'
 const projectClasses = `cursor-pointer text-gray-500 hover:text-zinc-950 duration-500`
+
+function openExactProject(project){
+	exactProjects.value[project] = !exactProjects.value[project];
+}
 </script>
 
 <template>
@@ -61,11 +66,7 @@ const projectClasses = `cursor-pointer text-gray-500 hover:text-zinc-950 duratio
             <p :class="projectClasses">
               <span
 					 :class="{ 'text-red-400': exactProjects.onTrack }"
-                @click="
-                  exactProjects.onTrack
-                    ? (exactProjects.onTrack = false)
-                    : (exactProjects.onTrack = true)
-                "
+                @click="openExactProject('onTrack')"
                 >Advanced to do list</span
               >
             </p>
@@ -109,11 +110,7 @@ const projectClasses = `cursor-pointer text-gray-500 hover:text-zinc-950 duratio
             <p :class="projectClasses">
               <span
 				  :class="{ 'text-red-400': exactProjects.frontendPortfolio }"
-                @click="
-                  exactProjects.frontendPortfolio
-                    ? (exactProjects.frontendPortfolio = false)
-                    : (exactProjects.frontendPortfolio = true)
-                "
+                @click="openExactProject('frontendPortfolio')"
                 >Frontend portfolio</span
               >
             </p>
