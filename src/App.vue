@@ -1,25 +1,26 @@
 <script setup>
 import TheHeader from './components/TheHeader.vue'
 import TheFrontPage from './components/TheFrontPage.vue'
+import TheProjects from './components/TheProjects.vue'
 </script>
 
 <template>
   <div class="wrapper">
     <the-header />
     <the-front-page />
+    <the-projects />
   </div>
 </template>
 
 <style>
-html{
-	height: 100%;
+html {
+  height: 100%;
 }
-#app{
-	height: 100vh;
+#app {
+  height: 100vh;
 }
-.wrapper{
-	height: 100vh;
-
+.wrapper {
+  height: 100vh;
 }
 .content-container {
   max-width: 1030px;

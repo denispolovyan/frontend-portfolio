@@ -23,17 +23,17 @@ const store = usePortfolioStore()
           class="flex gap-8 justify-start lg:absolute lg:flex-col lg:right-4 lg:gap-12 lg:top-20 md:gap-7 sm:static sm:flex-row sm:gap-6 xs:gap-4 sm:mb-2"
         >
           <div>
-            <a href="https://github.com/denispolovyan">
+            <a href="https://github.com/denispolovyan" target="_blank">
               <img :class="imgClasses" src="../assets/img/social-medias/github.png" alt="github" />
             </a>
           </div>
           <div>
-            <a href="https://instagram.com/denis_qb_?igshid=NTc4MTIwNjQ2YQ==">
+            <a href="https://instagram.com/denis_qb_?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
               <img :class="imgClasses" src="../assets/img/social-medias/instagram.png" alt="inst" />
             </a>
           </div>
           <div>
-            <a href="https://www.linkedin.com/in/denys-polovian-b311921a4/">
+            <a href="https://www.linkedin.com/in/denys-polovian-b311921a4/" target="_blank">
               <img
                 :class="imgClasses"
                 src="../assets/img/social-medias/linkedin.png"
@@ -41,7 +41,7 @@ const store = usePortfolioStore()
             /></a>
           </div>
           <div>
-            <a href="https://t.me/denisqb">
+            <a href="https://t.me/denisqb" target="_blank">
               <img
                 :class="imgClasses"
                 src="../assets/img/social-medias/telegram.png"
@@ -50,7 +50,7 @@ const store = usePortfolioStore()
             </a>
           </div>
           <div>
-            <a href="mailto:denispolovyan@gmail.com">
+            <a href="mailto:denispolovyan@gmail.com" target="_blank">
               <img :class="imgClasses" src="../assets/img/social-medias/email.png" alt="mail" />
             </a>
           </div>

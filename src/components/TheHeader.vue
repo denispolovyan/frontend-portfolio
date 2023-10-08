@@ -32,11 +32,11 @@ onMounted(() => {
 
 <template>
   <div class="font border-b" :class="{ 'bg-gray-400': nightTheme, 'bg-slate-100': !nightTheme }">
-    <div class="flex gap-3 h-40 items-center justify-between content-container">
+    <div class="flex gap-3 h-40 items-center justify-between content-container ssm:h-28">
       <div><img v-if="!nightTheme" class="w-20 ssm:w-16" src="../assets/logo.png" alt="logo" /><img v-else class="w-20 ssm:w-16" src="../assets/logoWhite.png" alt="logo" /></div>
       <div class="flex items-center gap-3 ssm:gap-2 xs:gap-2">
-        <div :class="itemClasses" class="bg-gray-700 hover:bg-gray-400 text-white">projects</div>
-        <div :class="itemClasses" class="bg-stone-700 hover:bg-stone-400 text-white">about me</div>
+        <div :class="itemClasses" class="bg-gray-700 hover:bg-gray-500 text-white">projects</div>
+        <div :class="itemClasses" class="bg-stone-700 hover:bg-stone-500 text-white">about me</div>
         <div class="flex gap-5 bold">
           <div
             @click="changeTheme()"
