@@ -3,6 +3,7 @@ import TheHeader from './components/TheHeader.vue'
 import TheFrontPage from './components/TheFrontPage.vue'
 import TheProjects from './components/TheProjects.vue'
 import TheAboutMe from './components/TheAboutMe.vue'
+import TheFooter from './components/TheFooter.vue'
 </script>
 
 <template>
@@ -10,7 +11,8 @@ import TheAboutMe from './components/TheAboutMe.vue'
     <the-header />
     <the-front-page />
     <the-projects />
-	 <the-about-me/>
+    <the-about-me />
+    <the-footer />
   </div>
 </template>
 

@@ -31,7 +31,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="font border-b" :class="{ 'bg-gray-400': nightTheme, 'bg-slate-100': !nightTheme }">
+  <div id="header" class="font border-b" :class="{ 'bg-gray-400': nightTheme, 'bg-slate-100': !nightTheme }">
     <div class="flex gap-3 h-40 items-center justify-between content-container ssm:h-28">
       <div>
         <img v-if="!nightTheme" class="w-20 ssm:w-16" src="../assets/logo.png" alt="logo" /><img
