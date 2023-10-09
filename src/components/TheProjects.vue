@@ -47,6 +47,7 @@ function openExactProject(project) {
       'bg-slate-100': store.getNightTheme,
       'bg-slate-50': !store.getNightTheme
     }"
+	 class="border-b"
   >
     <div class="content-container_frontpage">
       <div class="text-right text-5xl mb-6 ssm:text-left">My projects</div>

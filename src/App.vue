@@ -2,6 +2,7 @@
 import TheHeader from './components/TheHeader.vue'
 import TheFrontPage from './components/TheFrontPage.vue'
 import TheProjects from './components/TheProjects.vue'
+import TheAboutMe from './components/TheAboutMe.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import TheProjects from './components/TheProjects.vue'
     <the-header />
     <the-front-page />
     <the-projects />
+	 <the-about-me/>
   </div>
 </template>
 

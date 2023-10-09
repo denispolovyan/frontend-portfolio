@@ -52,7 +52,16 @@ onMounted(() => {
         >
           projects
         </div>
-        <div :class="itemClasses" class="bg-stone-700 hover:bg-stone-500 text-white">about me</div>
+        <div
+          :class="itemClasses"
+          class="bg-stone-700 hover:bg-stone-500 text-white"
+          v-scroll-to="{
+            el: '#about',
+            duration: 1000
+          }"
+        >
+          about me
+        </div>
         <div class="flex gap-5 bold">
           <div
             @click="changeTheme()"
