@@ -247,7 +247,7 @@ function openExactProject(project) {
             <div class="border-b border-gray-300 mb-8" v-if="exactProjects.cryptonomicon">
               <div class="flex flex-col gap-3 mb-6">
                 <div class="uppercase underline font-semibold">Crypto app</div>
-                <div>HTML CSS JS VUE LOCALSTORAGE</div>
+                <div>HTML CSS JS VUE LOCALSTORAGE TAILWIND</div>
                 <div class="italic underline">
                   <a target="_blank" href="https://denispolovyan.github.io/cryptonomicon"
                     >denispolovyan.github.io/cryptonomicon</a
@@ -545,9 +545,44 @@ function openExactProject(project) {
             <chevron-down-icon class="h-8" :class="projectArrowClasses" />
             <p>Native JS</p>
           </div>
+
           <div v-if="projects.nativeJs" class="flex flex-col gap-2">
-            <p><span :class="projectClasses">To do list </span></p>
-            <p><span :class="projectClasses">News app</span></p>
+
+
+				<p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.news }"
+                @click="openExactProject('news')"
+                >News app</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.news">
+              <div class="flex flex-col gap-3 mb-6">
+                <div>HTML CSS JS BOOTSTRAP</div>
+                <div class="italic underline">
+                  <a target="_blank" href="https://news-app-nine-nu.vercel.app/">news-app-nine-nu.vercel.app</a>
+                </div>
+					 <div>
+                  News app. App gets information from free API (100 news per 1 day). Here you can search for news using different categories, languages and countries. Also you can find posts by key words.
+                </div>
+					 <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/newsIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/newsMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+               </div> 
+              </div>
+            </div>
           </div>
         </div>
       </div>
