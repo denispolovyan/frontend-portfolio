@@ -15,14 +15,15 @@ let projects = ref({
 })
 
 let exactProjects = ref({
-  carousel: false,
-  toDoList: false,
+  carrousel: false,
+  cryptonomicon: false,
+  vueToDoList: false,
   forecast: false,
   films: false,
   fasiya: false,
   frontendPortfolio: false,
   onTrack: false,
-  testToDoList: false,
+  jsToDoList: false,
   news: false,
   portfolio: false,
   business: false,
@@ -35,8 +36,8 @@ const projectArrowClasses =
   'bg-stone-100 p-2 rounded-sm w-9 h-9 cursor-pointer hover:bg-stone-700 duration-1000 hover:text-white'
 const projectClasses = `cursor-pointer text-gray-500 hover:text-zinc-950 duration-500`
 
-function openExactProject(project){
-	exactProjects.value[project] = !exactProjects.value[project];
+function openExactProject(project) {
+  exactProjects.value[project] = !exactProjects.value[project]
 }
 </script>
 
@@ -65,18 +66,14 @@ function openExactProject(project){
           <div v-if="projects.compositionApi" class="flex flex-col gap-2">
             <p :class="projectClasses">
               <span
-					 :class="{ 'text-red-400': exactProjects.onTrack }"
+                :class="{ 'text-red-400': exactProjects.onTrack }"
                 @click="openExactProject('onTrack')"
                 >Advanced to do list</span
               >
             </p>
             <div class="border-b border-gray-300 mb-8" v-if="exactProjects.onTrack">
               <div class="flex flex-col gap-3 mb-6">
-                <div
-                  class="uppercase underline font-semibold"
-                >
-                  on track
-                </div>
+                <div class="uppercase underline font-semibold">on track</div>
                 <div>HTML CSS JS VUE LOCALSTORAGE TAILWIND</div>
                 <div class="italic underline">
                   <a target="_blank" href="https://denispolovyan.github.io/on_track/#activities"
@@ -92,7 +89,7 @@ function openExactProject(project){
                 <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-16">
                     <img
-                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-52"
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/onTrackIPhone.png"
                       alt="project photo"
                     />
@@ -109,18 +106,14 @@ function openExactProject(project){
             </div>
             <p :class="projectClasses">
               <span
-				  :class="{ 'text-red-400': exactProjects.frontendPortfolio }"
+                :class="{ 'text-red-400': exactProjects.frontendPortfolio }"
                 @click="openExactProject('frontendPortfolio')"
                 >Frontend portfolio</span
               >
             </p>
             <div class="border-b border-gray-300 mb-8" v-if="exactProjects.frontendPortfolio">
               <div class="flex flex-col gap-3 mb-6">
-                <div
-                  class="uppercase underline font-semibold"
-                >
-                  on track
-                </div>
+                <div class="uppercase underline font-semibold">on track</div>
                 <div>HTML CSS JS VUE VUEX TAILWIND</div>
                 <div class="italic underline">
                   <a target="_blank" href="https://denispolovyan.github.io/frontend-portfolio/"
@@ -129,13 +122,13 @@ function openExactProject(project){
                 </div>
                 <div>
                   My frontend developer portfolio. Here you can check all my experience: landing
-                  pages, native js, vue. Also here is some info about me and my contacts for all live
-                  cases so you can contact me if this page interested you.
+                  pages, native js, vue. Also here is some info about me and my contacts for all
+                  live cases so you can contact me if this page interested you.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-16">
                     <img
-                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-52"
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/frontendPortfolioIPhone.png"
                       alt="project photo"
                     />
@@ -164,11 +157,240 @@ function openExactProject(project){
             <p>Vue (Options Api)</p>
           </div>
           <div v-if="projects.optionsApi" class="flex flex-col gap-2">
-            <p><span :class="projectClasses">Art exhibition</span></p>
-            <p><span :class="projectClasses">Weather app </span></p>
-            <p><span :class="projectClasses">Cryptonomicon</span></p>
-            <p><span :class="projectClasses">Photo carousel</span></p>
-            <p><span :class="projectClasses">Films app</span></p>
+
+            <p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.fasiya }"
+                @click="openExactProject('fasiya')"
+                >Art exhibition</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.fasiya">
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="uppercase underline font-semibold">Fasiya</div>
+                <div>HTML CSS JS VUE VUEX</div>
+                <div class="italic underline">
+                  <a target="_blank" href="https://fasiyaart.de/">fasiyaart.de</a>
+                </div>
+                <div>
+                  Art exhibition app. My first real project where I created an app for exhibition in
+                  Germany to show Ukrainian culture, traditions and art. It was non-profit project
+                  for raising money on armed forces of Ukraine. It was a great experience and I will
+                  cooperate with them for future projects.
+                </div>
+                <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/fasiyaIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/fasiyaMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.forecast }"
+                @click="openExactProject('forecast')"
+                >Weather app</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.forecast">
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="uppercase underline font-semibold">Forecast</div>
+                <div>HTML CSS JS VUE</div>
+                <div class="italic underline">
+                  <a target="_blank" href="denispolovyan.github.io/weatherApp/"
+                    >denispolovyan.github.io/weatherApp</a
+                  >
+                </div>
+                <div>
+                  Weather app (mobile first). You can watch weather for the entire world: hourly
+                  forecast, day forecast, forecast right now. Also app has different additions:
+                  wind, rain, humidity, sunrise and sunset.
+                </div>
+                <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/weatherIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/weatherMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.cryptonomicon }"
+                @click="openExactProject('cryptonomicon')"
+                >Cryptonomicon</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.cryptonomicon">
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="uppercase underline font-semibold">Crypto app</div>
+                <div>HTML CSS JS VUE LOCALSTORAGE</div>
+                <div class="italic underline">
+                  <a target="_blank" href="denispolovyan.github.io/cryptonomicon/"
+                    >denispolovyan.github.io/cryptonomicon</a
+                  >
+                </div>
+                <div>
+                  Crypto app. My first Vue project which I was doing during learning it. Many
+                  features I borrowed from the author but also added a lot on my own. Here you can
+                  find cryptocurrency and watch how it changes (number and graph).
+                </div>
+                <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/cryptonomiconPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/cryptonomiconMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.carrousel }"
+                @click="openExactProject('carrousel')"
+                >Photo carrousel</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.carrousel">
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="uppercase underline font-semibold">Carrousel</div>
+                <div>HTML CSS JS VUE VUEX BOOTSTRAP LOCALSTORAGE</div>
+                <div class="italic underline">
+                  <a target="_blank" href="denispolovyan.github.io/cryptonomicon/"
+                    >denispolovyan.github.io/cryptonomicon</a
+                  >
+                </div>
+                <div>
+                  Random pictures app. It was my first test task. Here I used https://picsum.photos/ for random photos. In this app you can change and generate new pictures, also you can click on a picture to add it and click at the added picture to remove it.
+                </div>
+                <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/carouselIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/carosuelMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+				<p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.films }"
+                @click="openExactProject('films')"
+                >Films app</span
+              >
+            </p>
+				<div class="border-b border-gray-300 mb-8" v-if="exactProjects.films">
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="uppercase underline font-semibold">Films</div>
+                <div>HTML CSS JS VUE VUEX VUE-ROUTER VUELIDATE LOCALSTORAGE</div>
+                <div class="italic underline">
+                  <a target="_blank" href="https://denispolovyan.github.io/vuerouter/#/films"
+                    >denispolovyan.github.io/films</a
+                  >
+                </div>
+                <div>
+                  Films app. Here you can read info about films and rate them. But these options and which films you can see depend on your age, whether you signed up and if you bought premium or not. All films you rated you will see in your account and (if you want) you can delete or change rates.
+                </div>
+                <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/filmsIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/filmsMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+				<p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.vueToDoList }"
+                @click="openExactProject('vueToDoList')"
+                >To do list</span
+              >
+            </p>
+				<div class="border-b border-gray-300 mb-8" v-if="exactProjects.vueToDoList">
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="uppercase underline font-semibold">To do list</div>
+                <div>HTML CSS JS VUE VUEX VUE-ROUTER VUELIDATE LOCALSTORAGE</div>
+                <div class="italic underline">
+                  <a target="_blank" href="denispolovyan.github.io/vueTodo/"
+                    >denispolovyan.github.io/vueTodo</a
+                  >
+                </div>
+                <div>
+                  To do list. My second test task. It is simple to do list but here are some interesting features: scale of progress and task stage filter. The second one means that you can filter tasks and watch all/done/undone.
+                </div>
+                <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/vueToDoIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/vueToDoMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
