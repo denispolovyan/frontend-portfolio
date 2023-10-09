@@ -118,7 +118,7 @@ function openExactProject(project) {
                 <div>HTML CSS JS VUE VUEX TAILWIND</div>
                 <div class="italic underline">
                   <a target="_blank" href="https://denispolovyan.github.io/frontend-portfolio/"
-                    >denispolovyan.github.io/frontend-portfolio</a
+                    >denispolovyan.github.io/portfolio</a
                   >
                 </div>
                 <div>
@@ -211,7 +211,7 @@ function openExactProject(project) {
                 <div>HTML CSS JS VUE</div>
                 <div class="italic underline">
                   <a target="_blank" href="https://denispolovyan.github.io/weatherApp/"
-                    >denispolovyan.github.io/weatherApp</a
+                    >denispolovyan.github.io/weather</a
                   >
                 </div>
                 <div>
@@ -251,7 +251,7 @@ function openExactProject(project) {
                 <div>HTML CSS JS VUE LOCALSTORAGE TAILWIND</div>
                 <div class="italic underline">
                   <a target="_blank" href="https://denispolovyan.github.io/cryptonomicon"
-                    >denispolovyan.github.io/cryptonomicon</a
+                    >denispolovyan.github.io/crypto</a
                   >
                 </div>
                 <div>
