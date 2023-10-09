@@ -42,7 +42,7 @@ function openExactProject(project) {
 </script>
 
 <template>
-  <div
+  <div id="projects"
     :class="{
       'bg-slate-100': store.getNightTheme,
       'bg-slate-50': !store.getNightTheme
@@ -209,7 +209,7 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">Forecast</div>
                 <div>HTML CSS JS VUE</div>
                 <div class="italic underline">
-                  <a target="_blank" href="denispolovyan.github.io/weatherApp/"
+                  <a target="_blank" href="https://denispolovyan.github.io/weatherApp/"
                     >denispolovyan.github.io/weatherApp</a
                   >
                 </div>
@@ -249,7 +249,7 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">Crypto app</div>
                 <div>HTML CSS JS VUE LOCALSTORAGE</div>
                 <div class="italic underline">
-                  <a target="_blank" href="denispolovyan.github.io/cryptonomicon/"
+                  <a target="_blank" href="https://denispolovyan.github.io/cryptonomicon"
                     >denispolovyan.github.io/cryptonomicon</a
                   >
                 </div>
@@ -289,8 +289,8 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">Carrousel</div>
                 <div>HTML CSS JS VUE VUEX BOOTSTRAP LOCALSTORAGE</div>
                 <div class="italic underline">
-                  <a target="_blank" href="denispolovyan.github.io/cryptonomicon/"
-                    >denispolovyan.github.io/cryptonomicon</a
+                  <a target="_blank" href="https://denispolovyan.github.io/carousel/#"
+                    >denispolovyan.github.io/carrousel</a
                   >
                 </div>
                 <div>
@@ -365,7 +365,7 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">To do list</div>
                 <div>HTML CSS JS VUE VUEX VUE-ROUTER VUELIDATE LOCALSTORAGE</div>
                 <div class="italic underline">
-                  <a target="_blank" href="denispolovyan.github.io/vueTodo/"
+                  <a target="_blank" href="https://denispolovyan.github.io/vueTodo/"
                     >denispolovyan.github.io/vueTodo</a
                   >
                 </div>
@@ -407,10 +407,133 @@ function openExactProject(project) {
             <p>Landing pages</p>
           </div>
           <div v-if="projects.landingPages" class="flex flex-col gap-2">
-            <p><span :class="projectClasses">Portfolio</span></p>
-            <p><span :class="projectClasses">Agency</span></p>
-            <p><span :class="projectClasses">Business</span></p>
-            <p><span :class="projectClasses">Relvise</span></p>
+				<p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.portfolio }"
+                @click="openExactProject('portfolio')"
+                >Portfolio</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.portfolio">
+              <div class="flex flex-col gap-3 mb-6">
+                <div>HTML CSS JS</div>
+                <div class="italic underline">
+                  <a target="_blank" href="https://denispolovyan.github.io/portfolio/">denispolovyan.github.io/portfolio</a>
+                </div>
+					 <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/portfolioIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/portfolioMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+				<p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.business }"
+                @click="openExactProject('business')"
+                >Business</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.business">
+              <div class="flex flex-col gap-3 mb-6">
+                <div>HTML CSS</div>
+                <div class="italic underline">
+                  <a target="_blank" href="https://denispolovyan.github.io/business/">denispolovyan.github.io/business</a>
+                </div>
+					 <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/businessIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/businessMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+				<p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.relvise }"
+                @click="openExactProject('relvise')"
+                >Relvise</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.relvise">
+              <div class="flex flex-col gap-3 mb-6">
+                <div>HTML CSS</div>
+                <div class="italic underline">
+                  <a target="_blank" href="https://denispolovyan.github.io/relvise/">denispolovyan.github.io/relvise</a>
+                </div>
+					 <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/relviseIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/relviseMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+				<p :class="projectClasses">
+              <span
+                :class="{ 'text-red-400': exactProjects.agency }"
+                @click="openExactProject('agency')"
+                >Agency</span
+              >
+            </p>
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.agency">
+              <div class="flex flex-col gap-3 mb-6">
+                <div>HTML CSS JS</div>
+                <div class="italic underline">
+                  <a target="_blank" href="https://denispolovyan.github.io/agency/">denispolovyan.github.io/agency</a>
+                </div>
+					 <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-16">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/agencyIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-48"
+                      src="../assets/img/projectsExamples/agencyMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
