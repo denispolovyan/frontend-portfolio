@@ -42,12 +42,13 @@ function openExactProject(project) {
 </script>
 
 <template>
-  <div id="projects"
+  <div
+    id="projects"
     :class="{
       'bg-slate-200': store.getNightTheme,
       'bg-slate-50': !store.getNightTheme
     }"
-	 class="border-b border-slate-400"
+    class="border-b border-slate-400"
   >
     <div class="content-container_frontpage">
       <div class="text-right text-5xl mb-6 ssm:text-left">My projects</div>
@@ -61,7 +62,7 @@ function openExactProject(project) {
                 : (projects.compositionApi = true)
             "
           >
-            <chevron-down-icon class="h-8" :class="projectArrowClasses" />
+            <chevron-down-icon class="h-8" :class="projectArrowClasses"/>
             <p>Vue (Composition Api)</p>
           </div>
           <div v-if="projects.compositionApi" class="flex flex-col gap-2">
@@ -147,7 +148,7 @@ function openExactProject(project) {
           </div>
         </div>
 
-        <div class="flex flex-col gap-3 ">
+        <div class="flex flex-col gap-3">
           <div
             :class="projectCardClasse"
             @click="
@@ -158,7 +159,6 @@ function openExactProject(project) {
             <p>Vue (Options Api)</p>
           </div>
           <div v-if="projects.optionsApi" class="flex flex-col gap-2">
-
             <p :class="projectClasses">
               <span
                 :class="{ 'text-red-400': exactProjects.fasiya }"
@@ -205,7 +205,7 @@ function openExactProject(project) {
                 >Weather app</span
               >
             </p>
-            <div class=" mb-8" v-if="exactProjects.forecast">
+            <div class="mb-8" v-if="exactProjects.forecast">
               <div class="flex flex-col gap-3 mb-6">
                 <div class="uppercase underline font-semibold">Forecast</div>
                 <div>HTML CSS JS VUE</div>
@@ -295,7 +295,9 @@ function openExactProject(project) {
                   >
                 </div>
                 <div>
-                  Random pictures app. It was my first test task. Here I used https://picsum.photos/ for random photos. In this app you can change and generate new pictures, also you can click on a picture to add it and click at the added picture to remove it.
+                  Random pictures app. It was my first test task. Here I used https://picsum.photos/
+                  for random photos. In this app you can change and generate new pictures, also you
+                  can click on a picture to add it and click at the added picture to remove it.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-14">
@@ -316,14 +318,14 @@ function openExactProject(project) {
               </div>
             </div>
 
-				<p :class="projectClasses">
+            <p :class="projectClasses">
               <span
                 :class="{ 'text-red-400': exactProjects.films }"
                 @click="openExactProject('films')"
                 >Films app</span
               >
             </p>
-				<div class="border-b border-gray-300 mb-8" v-if="exactProjects.films">
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.films">
               <div class="flex flex-col gap-3 mb-6">
                 <div class="uppercase underline font-semibold">Films</div>
                 <div>HTML CSS JS VUE VUEX VUE-ROUTER VUELIDATE LOCALSTORAGE</div>
@@ -333,7 +335,10 @@ function openExactProject(project) {
                   >
                 </div>
                 <div>
-                  Films app. Here you can read info about films and rate them. But these options and which films you can see depend on your age, whether you signed up and if you bought premium or not. All films you rated you will see in your account and (if you want) you can delete or change rates.
+                  Films app. Here you can read info about films and rate them. But these options and
+                  which films you can see depend on your age, whether you signed up and if you
+                  bought premium or not. All films you rated you will see in your account and (if
+                  you want) you can delete or change rates.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-14">
@@ -354,14 +359,14 @@ function openExactProject(project) {
               </div>
             </div>
 
-				<p :class="projectClasses">
+            <p :class="projectClasses">
               <span
                 :class="{ 'text-red-400': exactProjects.vueToDoList }"
                 @click="openExactProject('vueToDoList')"
                 >To do list</span
               >
             </p>
-				<div class="border-b border-gray-300 mb-8" v-if="exactProjects.vueToDoList">
+            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.vueToDoList">
               <div class="flex flex-col gap-3 mb-6">
                 <div class="uppercase underline font-semibold">To do list</div>
                 <div>HTML CSS JS VUE VUEX VUE-ROUTER VUELIDATE LOCALSTORAGE</div>
@@ -371,7 +376,9 @@ function openExactProject(project) {
                   >
                 </div>
                 <div>
-                  To do list. My second test task. It is simple to do list but here are some interesting features: scale of progress and task stage filter. The second one means that you can filter tasks and watch all/done/undone.
+                  To do list. My second test task. It is simple to do list but here are some
+                  interesting features: scale of progress and task stage filter. The second one
+                  means that you can filter tasks and watch all/done/undone.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-14">
@@ -391,7 +398,6 @@ function openExactProject(project) {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -408,7 +414,7 @@ function openExactProject(project) {
             <p>Landing pages</p>
           </div>
           <div v-if="projects.landingPages" class="flex flex-col gap-2">
-				<p :class="projectClasses">
+            <p :class="projectClasses">
               <span
                 :class="{ 'text-red-400': exactProjects.portfolio }"
                 @click="openExactProject('portfolio')"
@@ -419,9 +425,11 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS JS</div>
                 <div class="italic underline">
-                  <a target="_blank" href="https://denispolovyan.github.io/portfolio/">denispolovyan.github.io/portfolio</a>
+                  <a target="_blank" href="https://denispolovyan.github.io/portfolio/"
+                    >denispolovyan.github.io/portfolio</a
+                  >
                 </div>
-					 <div class="flex ssm:flex-col ssm:gap-3">
+                <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
@@ -440,7 +448,7 @@ function openExactProject(project) {
               </div>
             </div>
 
-				<p :class="projectClasses">
+            <p :class="projectClasses">
               <span
                 :class="{ 'text-red-400': exactProjects.business }"
                 @click="openExactProject('business')"
@@ -451,9 +459,11 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS</div>
                 <div class="italic underline">
-                  <a target="_blank" href="https://denispolovyan.github.io/business/">denispolovyan.github.io/business</a>
+                  <a target="_blank" href="https://denispolovyan.github.io/business/"
+                    >denispolovyan.github.io/business</a
+                  >
                 </div>
-					 <div class="flex ssm:flex-col ssm:gap-3">
+                <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
@@ -472,7 +482,7 @@ function openExactProject(project) {
               </div>
             </div>
 
-				<p :class="projectClasses">
+            <p :class="projectClasses">
               <span
                 :class="{ 'text-red-400': exactProjects.relvise }"
                 @click="openExactProject('relvise')"
@@ -483,9 +493,11 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS</div>
                 <div class="italic underline">
-                  <a target="_blank" href="https://denispolovyan.github.io/relvise/">denispolovyan.github.io/relvise</a>
+                  <a target="_blank" href="https://denispolovyan.github.io/relvise/"
+                    >denispolovyan.github.io/relvise</a
+                  >
                 </div>
-					 <div class="flex ssm:flex-col ssm:gap-3">
+                <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
@@ -504,7 +516,7 @@ function openExactProject(project) {
               </div>
             </div>
 
-				<p :class="projectClasses">
+            <p :class="projectClasses">
               <span
                 :class="{ 'text-red-400': exactProjects.agency }"
                 @click="openExactProject('agency')"
@@ -515,9 +527,11 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS JS</div>
                 <div class="italic underline">
-                  <a target="_blank" href="https://denispolovyan.github.io/agency/">denispolovyan.github.io/agency</a>
+                  <a target="_blank" href="https://denispolovyan.github.io/agency/"
+                    >denispolovyan.github.io/agency</a
+                  >
                 </div>
-					 <div class="flex ssm:flex-col ssm:gap-3">
+                <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
@@ -548,25 +562,27 @@ function openExactProject(project) {
           </div>
 
           <div v-if="projects.nativeJs" class="flex flex-col gap-2">
-
-
-				<p :class="projectClasses">
+            <p :class="projectClasses">
               <span
                 :class="{ 'text-red-400': exactProjects.news }"
                 @click="openExactProject('news')"
                 >News app</span
               >
             </p>
-            <div class=" mb-8" v-if="exactProjects.news">
+            <div class="mb-8" v-if="exactProjects.news">
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS JS BOOTSTRAP</div>
                 <div class="italic underline">
-                  <a target="_blank" href="https://news-app-nine-nu.vercel.app/">news-app-nine-nu.vercel.app</a>
+                  <a target="_blank" href="https://news-app-nine-nu.vercel.app/"
+                    >news-app-nine-nu.vercel.app</a
+                  >
                 </div>
-					 <div>
-                  News app. App gets information from free API (100 news per 1 day). Here you can search for news using different categories, languages and countries. Also you can find posts by key words.
+                <div>
+                  News app. App gets information from free API (100 news per 1 day). Here you can
+                  search for news using different categories, languages and countries. Also you can
+                  find posts by key words.
                 </div>
-					 <div class="flex ssm:flex-col ssm:gap-3">
+                <div class="flex ssm:flex-col ssm:gap-3">
                   <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
@@ -581,7 +597,7 @@ function openExactProject(project) {
                       alt="project photo"
                     />
                   </div>
-               </div> 
+                </div>
               </div>
             </div>
           </div>

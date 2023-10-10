@@ -8,7 +8,7 @@ const store = usePortfolioStore()
 </script>
 
 <template>
-  <div class="font border-b border-slate-400" :class="{ 'bg-slate-200': store.getNightTheme, 'bg-slate-50': !store.getNightTheme }">
+  <div class="font border-b" :class="{ 'bg-slate-200': store.getNightTheme, 'bg-slate-50': !store.getNightTheme }">
     <div class="content-container_frontpage relative lg:flex lg:flex-col lg:gap-8">
       <div class="lg:flex sm:flex-col sm:gap-2">
         <div>
