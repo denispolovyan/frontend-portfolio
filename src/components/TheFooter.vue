@@ -16,7 +16,7 @@ const store = usePortfolioStore()
   >
     <div class="content-container_frontpage">
       <div
-		class=" mx-auto w-3/4 ssm:w-11/12 rounded-md py-4 flex justify-center duration-1000 cursor-pointer"
+		class=" mx-auto w-full rounded-sm py-4 flex justify-center duration-1000 cursor-pointer"
         :class="{
           'bg-gray-500 hover:bg-stone-200 text-gray-200 hover:text-gray-700': store.getNightTheme,
           'bg-stone-500 hover:bg-gray-300 text-gray-200 hover:text-gray-800': !store.getNightTheme

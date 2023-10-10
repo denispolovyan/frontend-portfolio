@@ -88,7 +88,7 @@ function openExactProject(project) {
                   you can create personal schedule for each hour.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/onTrackIPhone.png"
@@ -97,7 +97,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/onTrackMacbook.png"
                       alt="project photo"
                     />
@@ -127,7 +127,7 @@ function openExactProject(project) {
                   live cases so you can contact me if this page interested you.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/frontendPortfolioIPhone.png"
@@ -136,7 +136,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/frontendPortfolioMacbook.png"
                       alt="project photo"
                     />
@@ -180,7 +180,7 @@ function openExactProject(project) {
                   cooperate with them for future projects.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/fasiyaIPhone.png"
@@ -189,7 +189,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/fasiyaMacbook.png"
                       alt="project photo"
                     />
@@ -220,7 +220,7 @@ function openExactProject(project) {
                   wind, rain, humidity, sunrise and sunset.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/weatherIPhone.png"
@@ -229,7 +229,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/weatherMacbook.png"
                       alt="project photo"
                     />
@@ -260,7 +260,7 @@ function openExactProject(project) {
                   find cryptocurrency and watch how it changes (number and graph).
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/cryptonomiconPhone.png"
@@ -269,7 +269,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/cryptonomiconMacbook.png"
                       alt="project photo"
                     />
@@ -298,7 +298,7 @@ function openExactProject(project) {
                   Random pictures app. It was my first test task. Here I used https://picsum.photos/ for random photos. In this app you can change and generate new pictures, also you can click on a picture to add it and click at the added picture to remove it.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/carouselIPhone.png"
@@ -307,7 +307,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/carosuelMacbook.png"
                       alt="project photo"
                     />
@@ -336,7 +336,7 @@ function openExactProject(project) {
                   Films app. Here you can read info about films and rate them. But these options and which films you can see depend on your age, whether you signed up and if you bought premium or not. All films you rated you will see in your account and (if you want) you can delete or change rates.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/filmsIPhone.png"
@@ -345,7 +345,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/filmsMacbook.png"
                       alt="project photo"
                     />
@@ -374,7 +374,7 @@ function openExactProject(project) {
                   To do list. My second test task. It is simple to do list but here are some interesting features: scale of progress and task stage filter. The second one means that you can filter tasks and watch all/done/undone.
                 </div>
                 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/vueToDoIPhone.png"
@@ -383,7 +383,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/vueToDoMacbook.png"
                       alt="project photo"
                     />
@@ -422,7 +422,7 @@ function openExactProject(project) {
                   <a target="_blank" href="https://denispolovyan.github.io/portfolio/">denispolovyan.github.io/portfolio</a>
                 </div>
 					 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/portfolioIPhone.png"
@@ -431,7 +431,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/portfolioMacbook.png"
                       alt="project photo"
                     />
@@ -454,7 +454,7 @@ function openExactProject(project) {
                   <a target="_blank" href="https://denispolovyan.github.io/business/">denispolovyan.github.io/business</a>
                 </div>
 					 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/businessIPhone.png"
@@ -463,7 +463,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/businessMacbook.png"
                       alt="project photo"
                     />
@@ -486,7 +486,7 @@ function openExactProject(project) {
                   <a target="_blank" href="https://denispolovyan.github.io/relvise/">denispolovyan.github.io/relvise</a>
                 </div>
 					 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/relviseIPhone.png"
@@ -495,7 +495,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/relviseMacbook.png"
                       alt="project photo"
                     />
@@ -518,7 +518,7 @@ function openExactProject(project) {
                   <a target="_blank" href="https://denispolovyan.github.io/agency/">denispolovyan.github.io/agency</a>
                 </div>
 					 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/agencyIPhone.png"
@@ -527,7 +527,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/agencyMacbook.png"
                       alt="project photo"
                     />
@@ -567,7 +567,7 @@ function openExactProject(project) {
                   News app. App gets information from free API (100 news per 1 day). Here you can search for news using different categories, languages and countries. Also you can find posts by key words.
                 </div>
 					 <div class="flex ssm:flex-col ssm:gap-3">
-                  <div class="ssm:text-center ssm:ml-16">
+                  <div class="ssm:text-center ssm:ml-14">
                     <img
                       class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
                       src="../assets/img/projectsExamples/newsIPhone.png"
@@ -576,7 +576,7 @@ function openExactProject(project) {
                   </div>
                   <div>
                     <img
-                      class="h-72 md:h-64 sm:h-48"
+                      class="h-72 md:h-64 sm:h-44"
                       src="../assets/img/projectsExamples/newsMacbook.png"
                       alt="project photo"
                     />

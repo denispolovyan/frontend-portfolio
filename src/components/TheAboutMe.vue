@@ -149,9 +149,9 @@ const aboutCardClasses = 'text-2xl flex gap-4 items-center'
             <p>More info</p>
           </div>
           <div v-if="about.info" clas="border-b border-gray-300 pb-6">
-            <div>
-              I am an electronics design engineer student at the National Technical University of Ukraine
-              “Igor Sikorsky Kyiv Polytechnic Institute”. All I know about IT I learned myself so I am not used to get needed information from somebody, I know how to find it myself. Frontend for me is not just an easy way to IT, I like to discover new technologies, combine it and the result. I have that amazing feeling when the code starts running and I want to feel that again and again. That's why I am open to work as a Junior Frontend Developer.
+            <div class="flex flex-col gap-2">
+              <p>I am an electronics design engineer student at the National Technical University of Ukraine
+              “Igor Sikorsky Kyiv Polytechnic Institute”. All I know about IT I learned myself so I am not used to get needed information from somebody, I know how to find it. Frontend for me is not just an easy way to IT, I like to discover new technologies, combine it and the result. I have that amazing feeling when the code starts running and I want to feel that again and again.</p>  <p>That's why I am open to work as a Junior Frontend Developer. As I am a student and have a lot of energy - one of my goals is to find a cheerful and communicative team. I have an intermediate English level so I can communicate with foreign customers or international team. </p>
             </div>
           </div>
         </div>
