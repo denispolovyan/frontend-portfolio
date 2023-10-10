@@ -18,8 +18,8 @@ const store = usePortfolioStore()
       <div
 		class=" mx-auto w-full rounded-sm py-4 flex justify-center duration-1000 cursor-pointer"
         :class="{
-          'bg-gray-500 hover:bg-stone-200 text-gray-200 hover:text-gray-700': store.getNightTheme,
-          'bg-stone-500 hover:bg-gray-300 text-gray-200 hover:text-gray-800': !store.getNightTheme
+          'bg-gray-500 hover:bg-slate-200 text-gray-200 hover:text-gray-500': store.getNightTheme,
+          'bg-gray-300 hover:bg-gray-500 text-gray-600 hover:text-gray-200': !store.getNightTheme
         }"
       >
         <ChevronUpIcon

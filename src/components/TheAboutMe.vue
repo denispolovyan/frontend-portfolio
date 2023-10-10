@@ -22,8 +22,9 @@ const aboutCardClasses = 'text-2xl flex gap-4 items-center'
 <template>
   <div
     id="about"
+	 class="border-b"
     :class="{
-      'bg-slate-100': store.getNightTheme,
+      'bg-slate-200': store.getNightTheme,
       'bg-slate-50': !store.getNightTheme
     }"
   >
@@ -166,7 +167,7 @@ const aboutCardClasses = 'text-2xl flex gap-4 items-center'
 .content-container_about {
   max-width: 800px;
   margin: 0px auto;
-  padding: 40px 15px;
+  padding: 70px 15px 40px 15px;
   font-family: 'Arimo', sans-serif;
   letter-spacing: 3px;
 }

@@ -1,5 +1,5 @@
 <script setup>
-const imgClasses = 'h-14 w-14 sm:h-10 sm:w-10'
+const imgClasses = 'h-14 w-14 sm:h-10 sm:w-10 rounded-full duration-500 hover:bg-gray-400'
 
 import { usePortfolioStore } from '../store/portfolio'
 
@@ -8,7 +8,7 @@ const store = usePortfolioStore()
 </script>
 
 <template>
-  <div class="font border-b" :class="{ 'bg-slate-100': store.getNightTheme, 'bg-slate-50': !store.getNightTheme }">
+  <div class="font border-b border-slate-400" :class="{ 'bg-slate-200': store.getNightTheme, 'bg-slate-50': !store.getNightTheme }">
     <div class="content-container_frontpage relative lg:flex lg:flex-col lg:gap-8">
       <div class="lg:flex sm:flex-col sm:gap-2">
         <div>

@@ -44,10 +44,10 @@ function openExactProject(project) {
 <template>
   <div id="projects"
     :class="{
-      'bg-slate-100': store.getNightTheme,
+      'bg-slate-200': store.getNightTheme,
       'bg-slate-50': !store.getNightTheme
     }"
-	 class="border-b"
+	 class="border-b border-slate-400"
   >
     <div class="content-container_frontpage">
       <div class="text-right text-5xl mb-6 ssm:text-left">My projects</div>
@@ -147,7 +147,7 @@ function openExactProject(project) {
           </div>
         </div>
 
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-3 ">
           <div
             :class="projectCardClasse"
             @click="
@@ -205,7 +205,7 @@ function openExactProject(project) {
                 >Weather app</span
               >
             </p>
-            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.forecast">
+            <div class=" mb-8" v-if="exactProjects.forecast">
               <div class="flex flex-col gap-3 mb-6">
                 <div class="uppercase underline font-semibold">Forecast</div>
                 <div>HTML CSS JS VUE</div>
@@ -557,7 +557,7 @@ function openExactProject(project) {
                 >News app</span
               >
             </p>
-            <div class="border-b border-gray-300 mb-8" v-if="exactProjects.news">
+            <div class=" mb-8" v-if="exactProjects.news">
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS JS BOOTSTRAP</div>
                 <div class="italic underline">
