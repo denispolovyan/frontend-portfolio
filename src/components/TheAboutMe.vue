@@ -10,19 +10,22 @@ const store = usePortfolioStore()
 let about = ref({
   experience: false,
   stack: false,
-  info: false
+  info: false,
+  files: false
 })
 
 const aboutArrowClasses =
   'bg-stone-100 p-2 rounded-sm w-9 h-9 cursor-pointer hover:bg-stone-700 duration-1000 hover:text-white'
 
-const aboutCardClasses = 'text-2xl flex gap-4 items-center'
+const aboutCardClasses = 'text-2xl flex gap-4 items-center cursor-pointer'
+
+const linkClasses = 'hover:text-red-500 duration-700 italic underline'
 </script>
 
 <template>
   <div
     id="about"
-	 class="border-b"
+    class="border-b"
     :class="{
       'bg-slate-200': store.getNightTheme,
       'bg-slate-50': !store.getNightTheme
@@ -43,31 +46,28 @@ const aboutCardClasses = 'text-2xl flex gap-4 items-center'
             <div class="flex flex-col gap-6 w-10/12 ssm:w-full">
               <div>
                 <p class="text-xl">Nuxt (basics)</p>
-                <a
-                  target="_blank"
-                  class="italic underline"
-                  href="https://github.com/denispolovyan/nuxt"
-                  >github.com/denispolovyan/nuxt</a
+                <a target="_blank" :class="linkClasses" href="https://github.com/denispolovyan/nuxt"
+                  >https://github.com/denispolovyan/nuxt</a
                 >
               </div>
 
               <div>
                 <p class="text-xl">Pyhton (basics)</p>
                 <a
+                  :class="linkClasses"
                   target="_blank"
-                  class="italic underline"
                   href="https://github.com/denispolovyan/pythonList"
-                  >github.com/denispolovyan/python</a
+                  >https://github.com/denispolovyan/python</a
                 >
               </div>
 
               <div>
                 <p class="text-xl">Django (basics)</p>
                 <a
+                  :class="linkClasses"
                   target="_blank"
-                  class="italic underline"
                   href="https://github.com/denispolovyan/firstDjangoProject"
-                  >github.com/denispolovyan/django</a
+                  >https://github.com/denispolovyan/django</a
                 >
               </div>
 
@@ -77,17 +77,17 @@ const aboutCardClasses = 'text-2xl flex gap-4 items-center'
                   I had no real projects using PHP, but i finished two courses:
                   <br />
                   <a
+                    :class="linkClasses"
                     target="_blank"
-                    class="italic underline"
                     href="https://www.youtube.com/playlist?list=PLDyJYA6aTY1m5zGQVcEYIoSFz2GD8u7cC"
-                    >youtube.com/php/course1</a
+                    >https://youtube.com/php/course1</a
                   >
                   <br />
                   <a
+                    :class="linkClasses"
                     target="_blank"
-                    class="italic underline"
                     href="https://www.youtube.com/playlist?list=PLd2_Os8Cj3t-CoUEdoAiYc1sj21FH79no"
-                    >youtube.com/php/course2</a
+                    >https://youtube.com/php/course2</a
                   >
                 </div>
               </div>
@@ -98,17 +98,17 @@ const aboutCardClasses = 'text-2xl flex gap-4 items-center'
                   I had no real projects using SQL, but i finished two courses:
                   <br />
                   <a
+                    :class="linkClasses"
                     target="_blank"
-                    class="italic underline"
                     href="https://www.youtube.com/playlist?list=PL0lO_mIqDDFVnLvR39VpEtphQ8bPJ-xR9"
-                    >youtube.com/sql/course1</a
+                    >https://youtube.com/sql/course1</a
                   >
                   <br />
                   <a
+                    :class="linkClasses"
                     target="_blank"
-                    class="italic underline"
                     href="https://www.youtube.com/playlist?list=PLDyJYA6aTY1lPhlF2iHiLlkDW6bd39VmE"
-                    >youtube.com/sql/course2</a
+                    >https://youtube.com/sql/course2</a
                   >
                 </div>
               </div>
@@ -151,8 +151,45 @@ const aboutCardClasses = 'text-2xl flex gap-4 items-center'
           </div>
           <div v-if="about.info" clas="border-b border-gray-300 pb-6">
             <div class="flex flex-col gap-2">
-              <p>I am an electronics design engineer student at the National Technical University of Ukraine
-              “Igor Sikorsky Kyiv Polytechnic Institute”. All I know about IT I learned myself so I am not used to get needed information from somebody, I know how to find it. Frontend for me is not just an easy way to IT, I like to discover new technologies, combine it and the result. I have that amazing feeling when the code starts running and I want to feel that again and again.</p>  <p>That's why I am open to work as a Junior Frontend Developer. As I am a student and have a lot of energy - one of my goals is to find a cheerful and communicative team. I have an intermediate English level so I can communicate with foreign customers or international team. </p>
+              <p>
+                I am an electronics design engineer student at the National Technical University of
+                Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”. All I know about IT I learned
+                myself so I am not used to get needed information from somebody, I know how to find
+                it. Frontend for me is not just an easy way to IT, I like to discover new
+                technologies, combine it and the result. I have that amazing feeling when the code
+                starts running and I want to feel that again and again.
+              </p>
+              <p>
+                That's why I am open to work as a Junior Frontend Developer. As I am a student and
+                have a lot of energy - one of my goals is to find a cheerful and communicative team.
+                I have an intermediate English level so I can communicate with foreign customers or
+                international team.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div
+            :class="aboutCardClasses"
+            @click="about.files ? (about.files = false) : (about.files = true)"
+          >
+            <chevron-down-icon class="h-8" :class="aboutArrowClasses" />
+            <p>Files</p>
+          </div>
+          <div
+            v-if="about.files"
+            class="flex flex-col gap-2 w-10/12 ssm:w-full border-b border-gray-300 pb-6"
+          >
+            <div>
+              <p class="text-xl">CV/Resume</p>
+              <div>
+                <a
+                  :class="linkClasses"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1QJCNnJNybdQLApZ3FF8ccQLWDKnrkMBw/view?usp=sharing"
+                  >https://drive.google.com/CV</a
+                >
+              </div>
             </div>
           </div>
         </div>
