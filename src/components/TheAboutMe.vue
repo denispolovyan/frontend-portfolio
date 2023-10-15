@@ -47,7 +47,7 @@ const linkClasses = 'hover:text-red-500 duration-700 italic underline'
               <div>
                 <p class="text-xl">Nuxt (basics)</p>
                 <a target="_blank" :class="linkClasses" href="https://github.com/denispolovyan/nuxt"
-                  >https://github.com/denispolovyan/nuxt</a
+                  >https://github.com/nuxt</a
                 >
               </div>
 
@@ -57,7 +57,7 @@ const linkClasses = 'hover:text-red-500 duration-700 italic underline'
                   :class="linkClasses"
                   target="_blank"
                   href="https://github.com/denispolovyan/pythonList"
-                  >https://github.com/denispolovyan/python</a
+                  >https://github.com/python</a
                 >
               </div>
 
@@ -67,7 +67,7 @@ const linkClasses = 'hover:text-red-500 duration-700 italic underline'
                   :class="linkClasses"
                   target="_blank"
                   href="https://github.com/denispolovyan/firstDjangoProject"
-                  >https://github.com/denispolovyan/django</a
+                  >https://github.com/django</a
                 >
               </div>
 

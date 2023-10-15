@@ -80,7 +80,10 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">on track</div>
                 <div>HTML CSS JS VUE LOCALSTORAGE TAILWIND</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/on_track/#activities"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/on_track/#activities"
                     >denispolovyan.github.io/on_track</a
                   >
                 </div>
@@ -110,18 +113,24 @@ function openExactProject(project) {
             </div>
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.frontendPortfolio }"
                 @click="openExactProject('frontendPortfolio')"
                 >Frontend portfolio</span
               >
             </p>
-            <div class="animation border-b border-gray-300 mb-8" v-if="exactProjects.frontendPortfolio">
+            <div
+              class="animation border-b border-gray-300 mb-8"
+              v-if="exactProjects.frontendPortfolio"
+            >
               <div class="flex flex-col gap-3 mb-6">
                 <div class="uppercase underline font-semibold">on track</div>
                 <div>HTML CSS JS VUE VUEX TAILWIND</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/frontend-portfolio/"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/frontend-portfolio/"
                     >denispolovyan.github.io/portfolio</a
                   >
                 </div>
@@ -164,7 +173,7 @@ function openExactProject(project) {
           <div v-if="projects.optionsApi" class="flex flex-col gap-2">
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.fasiya }"
                 @click="openExactProject('fasiya')"
                 >Art exhibition</span
@@ -175,7 +184,9 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">Fasiya</div>
                 <div>HTML CSS JS VUE VUEX</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://fasiyaart.de/">fasiyaart.de</a>
+                  <a :class="linkClasses" target="_blank" href="https://fasiyaart.de/"
+                    >fasiyaart.de</a
+                  >
                 </div>
                 <div>
                   Art exhibition app. My first real project where I created an app for exhibition in
@@ -204,18 +215,21 @@ function openExactProject(project) {
 
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.forecast }"
                 @click="openExactProject('forecast')"
                 >Weather app</span
               >
             </p>
-            <div class="mb-8" v-if="exactProjects.forecast">
+            <div class="animation border-b border-gray-300 mb-8" v-if="exactProjects.forecast">
               <div class="flex flex-col gap-3 mb-6">
                 <div class="uppercase underline font-semibold">Forecast</div>
                 <div>HTML CSS JS VUE</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/weatherApp/"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/weatherApp/"
                     >denispolovyan.github.io/weather</a
                   >
                 </div>
@@ -245,7 +259,7 @@ function openExactProject(project) {
 
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.cryptonomicon }"
                 @click="openExactProject('cryptonomicon')"
                 >Cryptonomicon</span
@@ -256,7 +270,10 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">Crypto app</div>
                 <div>HTML CSS JS VUE LOCALSTORAGE TAILWIND</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/cryptonomicon"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/cryptonomicon"
                     >denispolovyan.github.io/crypto</a
                   >
                 </div>
@@ -286,7 +303,7 @@ function openExactProject(project) {
 
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.carrousel }"
                 @click="openExactProject('carrousel')"
                 >Photo carrousel</span
@@ -297,7 +314,10 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">Carrousel</div>
                 <div>HTML CSS JS VUE VUEX BOOTSTRAP LOCALSTORAGE</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/carousel/#"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/carousel/#"
                     >denispolovyan.github.io/carrousel</a
                   >
                 </div>
@@ -327,7 +347,7 @@ function openExactProject(project) {
 
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.films }"
                 @click="openExactProject('films')"
                 >Films app</span
@@ -338,7 +358,10 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">Films</div>
                 <div>HTML CSS JS VUE VUEX VUE-ROUTER VUELIDATE LOCALSTORAGE</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/vuerouter/#/films"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/vuerouter/#/films"
                     >denispolovyan.github.io/films</a
                   >
                 </div>
@@ -369,7 +392,7 @@ function openExactProject(project) {
 
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.vueToDoList }"
                 @click="openExactProject('vueToDoList')"
                 >To do list</span
@@ -380,7 +403,10 @@ function openExactProject(project) {
                 <div class="uppercase underline font-semibold">To do list</div>
                 <div>HTML CSS JS VUE VUEX VUE-ROUTER VUELIDATE LOCALSTORAGE</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/vueTodo/"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/vueTodo/"
                     >denispolovyan.github.io/vueTodo</a
                   >
                 </div>
@@ -425,7 +451,7 @@ function openExactProject(project) {
           <div v-if="projects.landingPages" class="flex flex-col gap-2">
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.portfolio }"
                 @click="openExactProject('portfolio')"
                 >Portfolio</span
@@ -435,7 +461,10 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS JS</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/portfolio/"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/portfolio/"
                     >denispolovyan.github.io/portfolio</a
                   >
                 </div>
@@ -460,7 +489,7 @@ function openExactProject(project) {
 
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.business }"
                 @click="openExactProject('business')"
                 >Business</span
@@ -470,7 +499,10 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/business/"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/business/"
                     >denispolovyan.github.io/business</a
                   >
                 </div>
@@ -495,7 +527,7 @@ function openExactProject(project) {
 
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.relvise }"
                 @click="openExactProject('relvise')"
                 >Relvise</span
@@ -505,7 +537,10 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/relvise/"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/relvise/"
                     >denispolovyan.github.io/relvise</a
                   >
                 </div>
@@ -530,7 +565,7 @@ function openExactProject(project) {
 
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.agency }"
                 @click="openExactProject('agency')"
                 >Agency</span
@@ -540,7 +575,10 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS JS</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://denispolovyan.github.io/agency/"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/agency/"
                     >denispolovyan.github.io/agency</a
                   >
                 </div>
@@ -577,7 +615,7 @@ function openExactProject(project) {
           <div v-if="projects.nativeJs" class="flex flex-col gap-2">
             <p :class="projectClasses">
               <span
-				  class="border-b hover:border-red-500 border-transparent duration-1000"
+                class="border-b hover:border-red-500 border-transparent duration-1000"
                 :class="{ 'text-red-400': exactProjects.news }"
                 @click="openExactProject('news')"
                 >News app</span
@@ -587,7 +625,10 @@ function openExactProject(project) {
               <div class="flex flex-col gap-3 mb-6">
                 <div>HTML CSS JS BOOTSTRAP</div>
                 <div class="italic underline">
-                  <a :class="linkClasses" target="_blank" href="https://news-app-nine-nu.vercel.app/"
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://news-app-nine-nu.vercel.app/"
                     >news-app-nine-nu.vercel.app</a
                   >
                 </div>
@@ -632,14 +673,17 @@ function openExactProject(project) {
   letter-spacing: 3px;
 }
 
-
 .animation {
   opacity: 0;
   animation: ani 2s forwards;
 }
 
 @keyframes ani {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
