@@ -15,6 +15,7 @@ let projects = ref({
 })
 
 let exactProjects = ref({
+  spilne: false,
   carrousel: false,
   cryptonomicon: false,
   vueToDoList: false,
@@ -111,6 +112,56 @@ function openExactProject(project) {
                 </div>
               </div>
             </div>
+
+
+
+
+
+				<p :class="projectClasses">
+              <span
+                class="border-b hover:border-red-500 border-transparent duration-1000"
+                :class="{ 'text-red-400': exactProjects.spilne }"
+                @click="openExactProject('spilne')"
+                >Receipt calculation</span
+              >
+            </p>
+            <div class="animation border-b border-gray-300 mb-8" v-if="exactProjects.spilne">
+              <div class="flex flex-col gap-3 mb-6">
+                <div class="uppercase underline font-semibold">spilne</div>
+                <div>HTML CSS JS VUE LOCALSTORAGE TAILWIND VUETIFY</div>
+                <div class="italic underline">
+                  <a
+                    :class="linkClasses"
+                    target="_blank"
+                    href="https://denispolovyan.github.io/spilne/"
+                    >denispolovyan.github.io/spilne</a
+                  >
+                </div>
+                <div>
+                  Receipt app. Imagine you went to shop with your friends but you purchased different goods so now you need to calculate how much money you owe each other. Here you can create new purchasers and calculate how much money they spent. Also you can save receipts to history.
+                </div>
+                <div class="flex ssm:flex-col ssm:gap-3">
+                  <div class="ssm:text-center ssm:ml-14">
+                    <img
+                      class="h-72 md:h-64 sm:h-48 ssm:h-96 ssm:w-48"
+                      src="../assets/img/projectsExamples/spilneIPhone.png"
+                      alt="project photo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-72 md:h-64 sm:h-44"
+                      src="../assets/img/projectsExamples/spilneMacbook.png"
+                      alt="project photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
             <p :class="projectClasses">
               <span
                 class="border-b hover:border-red-500 border-transparent duration-1000"
